@@ -79,14 +79,14 @@ export default function FeesTable() {
             columns={columns}
             pagination={true}
             pageSize={5}
-            emptyLabel="No (M)SRM accounts"
+            emptyLabel="No (M)YOLK accounts"
           />
         </Col>
       </Row>
       <Row style={{ marginTop: 8 }}>
         <Col>
           <Typography>
-            Holding SRM or MSRM makes you eligible for fee discounts:
+            Holding YOLK or mYOLK makes you eligible for fee discounts:
           </Typography>
           <FeeScheduleTable />
         </Col>
@@ -99,24 +99,30 @@ function FeeScheduleTable() {
   // Representation of serum-js/src/fees.ts
   const dataSource = [
     { feeTier: 0, taker: 0.0022, maker: -0.0003, token: '', balance: '' },
-    { feeTier: 1, taker: 0.002, maker: -0.0003, token: 'SRM', balance: 100 },
-    { feeTier: 2, taker: 0.0018, maker: -0.0003, token: 'SRM', balance: 1000 },
-    { feeTier: 3, taker: 0.0016, maker: -0.0003, token: 'SRM', balance: 10000 },
+    { feeTier: 1, taker: 0.002, maker: -0.0003, token: 'YOLK', balance: 100 },
+    { feeTier: 2, taker: 0.0018, maker: -0.0003, token: 'YOLK', balance: 1000 },
+    {
+      feeTier: 3,
+      taker: 0.0016,
+      maker: -0.0003,
+      token: 'YOLK',
+      balance: 10000,
+    },
     {
       feeTier: 4,
       taker: 0.0014,
       maker: -0.0003,
-      token: 'SRM',
+      token: 'YOLK',
       balance: 100000,
     },
     {
       feeTier: 5,
       taker: 0.0012,
       maker: -0.0003,
-      token: 'SRM',
+      token: 'YOLK',
       balance: 1000000,
     },
-    { feeTier: 6, taker: 0.001, maker: -0.0005, token: 'MSRM', balance: 1 },
+    { feeTier: 6, taker: 0.001, maker: -0.0005, token: 'mYOLK', balance: 1 },
   ];
   const columns = [
     {
