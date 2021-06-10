@@ -182,7 +182,7 @@ export default function TopBar() {
           >
             <Col>
               <PlusCircleOutlined
-                style={{ color: '#2abdd2' }}
+                style={{ color: '#fffd8e' }}
                 onClick={() => setAddEndpointVisible(true)}
               />
             </Col>
@@ -193,7 +193,7 @@ export default function TopBar() {
                 title="URL"
                 trigger="hover"
               >
-                <InfoCircleOutlined style={{ color: '#2abdd2' }} />
+                <InfoCircleOutlined style={{ color: '#fffd8e' }} />
               </Popover>
             </Col>
             <Col>
